@@ -5,8 +5,11 @@
 ## CHART RENDERING
 ## Things Required
 In order to render the manager's dashboard which contains various charts, the following are required:
+
+Run npm init to create package.json file.
+
   * We need to install Node.js
-  * Install ExpressJS using $ npm install express and
+  * Install ExpressJS using $ npm install express (This will create the file node modules) and
   * Install MongoDB
 
 Other processes required include:
