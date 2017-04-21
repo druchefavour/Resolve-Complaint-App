@@ -9,6 +9,7 @@
   "author": "Dr. Angus Ogubuike",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "http": "^0.0.0",
     "react": "^15.0.0",
