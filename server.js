@@ -11,7 +11,7 @@ var mongoose = require("mongoose");
 var mongodb = require("mongodb");
 
 //Here we find an appriopriate database to connect to, defaulting to localhost if we don't find one.
-var uristring = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URI || "mongodb://localhost/consumerCompdb";
+var uristring = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URI || "mongodb://localhost/consumercompdb";
 
 // The app server will listen to an appriopriate port, or default to port 3000
 
@@ -60,7 +60,7 @@ db.once("open", function() {
 
 //MongoDB connection URL - mongodb://host:port/dbName
 
-var dbHost = "mongodb://localhost/consumerCompdb";
+var dbHost = "mongodb://localhost/consumercompdb";
      
 //Use the MongoClient to connect to the db as shown below:
 //DB Object
