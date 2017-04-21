@@ -1,0 +1,504 @@
+/*
+	Responsive StyleSheet For Immortal Header & Slider
+
+	Item Name: Immortal Header & Slider
+	Item URL: 
+	Description: Different Types of Headers for Web Pages, Bootstrap Sliders, Bootstrap Mega Menu, Bootstrap Modal Forms
+	Author: SZThemes
+	Author URI: http://codecanyon.net/user/sz_themes
+	Version: 1.0
+
+
+											Content List
+  --------------------------------------------------------------------------------------------------
+
+	NAME -------------------------------------------------------LINE NUMBER----------------------- #
+
+	Max-Width: 991px --------------------------------------------46------------------------------- 01
+
+	Max-Width: 767px --------------------------------------------90------------------------------- 02
+
+	Min-768px - Max-5000px --------------------------------------207------------------------------ 03	
+
+	Max-Width: 480px --------------------------------------------243------------------------------ 04	
+
+	Min-481px - Max-600px ---------------------------------------322------------------------------ 05
+
+	Min-601px - Max-767px ---------------------------------------367------------------------------ 06
+
+	Min-768px - Max-991px ---------------------------------------389------------------------------ 07
+
+	Min-992px - Max-1250px --------------------------------------447------------------------------ 09
+
+	[ Note: Line Numbers Are According To Notepad++ ]
+
+*/
+
+
+
+/*==========================================================================================================================================
+
+												SEPARATE NAVBAR HEADER VERSION RESPONSIVE
+
+==========================================================================================================================================*/
+
+
+/*==================================================  MEDIA 991px  ==================================================*/
+
+
+@media (max-width: 991px) {
+
+	/*=======================================================
+						NAVIGATION BAR
+	========================================================*/
+	
+	.separate_navbar_navbar {
+
+		top: 0px;
+
+	}
+	
+	.separate_navbar_navbar_responsive {
+		
+		-webkit-border-radius: 0px; /* Chrome, Safari, Opera */
+				border-radius: 0px; /* Standard syntax */
+
+	}
+	
+	.separate_navbar_navbar.affix {
+
+        position: static;
+
+    }
+	
+	#separate_navbar_header_logo {
+
+		margin-top: 0px;
+
+	}
+	
+	.separate_navbar_carousel_wrapper {
+
+		top: 0px;
+		margin-bottom: 0px;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 767px  ==================================================*/
+
+
+@media only screen and (max-width: 767px) {
+
+	/*=======================================================
+						NAVIGATION BAR
+	========================================================*/
+	
+	.separate_navbar_navbar_header {
+	
+		padding: 10px 0px 10px 0px;
+	
+	}
+	
+	.separate_navbar_navbar_nav {
+
+		float: initial !important;
+
+	}
+
+	.separate_navbar_fa_angle_down {
+	
+		float: right;
+		font-size: 22px;
+
+	}
+
+	/*========== DROPDOWN ==========*/
+	
+	.separate_navbar_dropdown_right i,
+	.separate_navbar_dropdown_left i {
+
+		display: none;
+
+	}
+
+	.separate_navbar_dropdown_menu_right,
+	.separate_navbar_dropdown_menu_left {
+
+		display: none;
+
+	}
+	
+	.separate_navbar_navbar_nav,
+	.separate_navbar_dropdown_menu {
+
+		text-align: left;
+
+	}
+
+	.separate_navbar_shortcodes_list_border,
+	.separate_navbar_features_list_border {
+
+		border-right: none;
+
+	}
+	
+	.separate_navbar_dropdown ul {
+
+		text-align: center;
+
+	}
+	
+	.separate_navbar_mega_image,
+	.separate_navbar_mega_posts {
+	
+		text-align: center;
+	
+	}
+	
+	.separate_navbar_mega_image img,
+	.separate_navbar_mega_posts_col_img img,
+	.separate_navbar_dropdown_menu_shop_col img {
+
+		width: 50%;
+
+	}
+	
+	.separate_navbar_mega_posts_col_text h5 {
+
+		margin: 10px 0px 10px 0px;
+
+	}
+	
+	.separate_navbar_dropdown_menu_shop_col {
+	
+		text-align: center;
+	
+	}
+	
+	.separate_navbar_dropdown_menu_shop_col p {
+	
+		text-align: center;
+	
+	}
+
+	.separate_navbar_dropdown_menu_share {
+
+		float: initial !important;
+
+	}
+	
+	/*=======================================================
+							MODAL
+	========================================================*/
+
+	.separate_navbar_modal_content {
+
+		width: 100%;
+		position: static;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 768px - 5000px  ==================================================*/
+
+
+@media only screen and (min-width: 768px) and (max-width: 5000px) {
+
+	/*=======================================================
+				NAVIGATION BAR FADE EFFECT
+	========================================================*/
+	
+	.separate_navbar_dropdown_menu {
+
+		opacity: 0 !important;
+		display: block !important;
+		visibility: hidden !important;
+
+		-webkit-transform: scale(0.9,0.9) !important; /* Chrome, Safari */
+				transform: scale(0.9,0.9) !important; /* Standard syntax */
+
+	-webkit-transition: -webkit-transform 0.2s ease-in-out, visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s; /* Chrome, Safari */
+		transition:         transform 0.2s ease-in-out, visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s; /* Standard syntax */
+
+	}
+
+	.separate_navbar_dropdown:hover>.separate_navbar_dropdown_menu {
+
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: scale(1,1) !important; /* Chrome, Safari */
+				transform: scale(1,1) !important; /* Standard syntax */
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 480px  ==================================================*/
+
+
+@media only screen and (max-width: 480px) {
+
+	/*========== SEARCH BAR ==========*/
+
+	.separate_navbar_search_bar>div {
+
+		width: 75%;
+
+	}
+	
+	.separate_navbar_search_bar>button {
+
+		width: 25%;
+
+	}
+
+	/*=======================================================
+							SLIDER
+	========================================================*/
+
+	/*========== LEFT/RIGHT CONTROL ==========*/
+
+	.separate_navbar_carousel_control_left,
+	.separate_navbar_carousel_control_right {
+
+		border: none;
+
+	}
+	
+	.separate_navbar_carousel_control_icons {
+
+		font-size: 18px !important;
+
+	}
+
+	/*========== CAPTION ==========*/
+
+	.separate_navbar_carousel_caption {
+
+		left: 0%;
+		width: 100%;
+		bottom: 5%;
+		padding: 5px 5px 5px 5px;
+
+		-webkit-border-radius: 0px; /* Chrome, Safari, Opera */
+				border-radius: 0px; /* Standard syntax */
+
+	}
+
+	.separate_navbar_carousel_caption h2 {
+
+		font-size: 20px;
+		margin: 0px 0px 10px 0px;
+
+	}
+
+	.separate_navbar_carousel_caption h1 {
+
+		font-size: 25px;
+		margin: 0px 0px 10px 0px;
+
+	}
+
+	.separate_navbar_carousel_button_colored,
+	.separate_navbar_carousel_button_colored:visited {
+
+		margin: 0 0;
+		height: 34px;
+		padding: 0 13px;
+		line-height: 34px;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 481px - 600px  ==================================================*/
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+	/*========== SEARCH BAR ==========*/
+
+	.separate_navbar_search_bar>div {
+
+		width: 75%;
+
+	}
+
+	.separate_navbar_search_bar>button {
+
+		width: 25%;
+
+	}
+
+	/*=======================================================
+							SLIDER
+	========================================================*/
+
+	/*========== LEFT/RIGHT CONTROL ==========*/
+
+	.separate_navbar_carousel_control_left,
+	.separate_navbar_carousel_control_right {
+
+		border: none;
+
+	}
+
+	/*========== CAPTION ==========*/
+
+	.separate_navbar_carousel_caption {
+
+		left: 0%;
+		bottom: 5%;
+		width: 100%;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 601px - 767px  ==================================================*/
+
+
+@media (min-width: 601px) and (max-width: 767px) {
+
+	/*=======================================================
+							SLIDER
+	========================================================*/
+
+	/*========== CAPTION ==========*/
+
+	.separate_navbar_carousel_caption {
+
+		left: 0%;
+		bottom: 15%;
+		width: 100%;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 768px - 991px  ==================================================*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/*=======================================================
+						NAVIGATION BAR
+	========================================================*/
+
+	/*========== DROPDOWN ==========*/
+
+	.separate_navbar_dropdown_menu_left {
+		
+		left: 100%;
+
+	}
+
+	.separate_navbar_dropdown_menu_shortcodes {
+
+		width: 725px;
+		left: -225px;
+
+	}
+
+	.separate_navbar_dropdown_menu_features {
+
+		width: 725px;
+		left: -370px;
+
+	}
+
+	.separate_navbar_dropdown_menu_mega {
+
+		left: -485px;
+		width: 725px;
+
+	}
+
+	.separate_navbar_dropdown_menu_shop {
+
+		left: -586px;
+		width: 750px;
+
+	}
+
+	/*=======================================================
+							SLIDER
+	========================================================*/
+
+	.separate_navbar_carousel_caption {
+
+		bottom: 20%;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 992px - 1250px  ==================================================*/
+
+
+@media (min-width: 992px) and (max-width: 1250px) {
+
+	/*=======================================================
+						NAVIGATION BAR
+	========================================================*/
+
+	.separate_navbar_navbar_responsive {
+
+		padding-left: 0px;
+		padding-right: 0px;
+
+	}
+
+	/*========== DROPDOWN ==========*/
+
+	.separate_navbar_dropdown_menu_shortcodes {
+
+		left: -420px;
+		width: 950px;
+
+	}
+	
+	.separate_navbar_dropdown_menu_features {
+
+		left: -565px;
+		width: 950px;
+
+	}
+	
+	.separate_navbar_dropdown_menu_mega {
+
+		left: -709px;
+		width: 990px;
+
+	}
+
+	
+	.separate_navbar_dropdown_menu_shop {
+
+		left: -775px;
+		width: 950px;
+
+	}
+
+	/*=======================================================
+							SLIDER
+	========================================================*/
+
+	.separate_navbar_carousel_caption {
+
+		bottom: 25%;
+
+	}
+
+}

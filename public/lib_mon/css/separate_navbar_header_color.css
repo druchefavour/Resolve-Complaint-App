@@ -1,0 +1,470 @@
+/*
+	Color StyleSheet For Immortal Header & Slider
+
+	Item Name: Immortal Header & Slider
+	Item URL: 
+	Description: Different Types of Headers for Web Pages, Bootstrap Sliders, Bootstrap Mega Menu, Bootstrap Modal Forms
+	Author: SZThemes
+	Author URI: http://codecanyon.net/user/sz_themes
+	Version: 1.0
+
+
+									Content List
+  -----------------------------------------------------------------------------------
+
+	NAME ----------------------------------------LINE NUMBER--------------------- #
+
+	NAVIGATION BAR ------------------------------55------------------------------ 00
+	
+	SLIDER --------------------------------------297----------------------------- 01
+	
+	MODAL ---------------------------------------373----------------------------- 02
+
+
+
+	[ Note: Line Numbers Are According To Notepad++ ]
+
+
+  ------------------------------------------------------------------
+
+
+							Color Codes
+  ------------------------------------------------------------------
+
+	NAME    ------------------------RGB-------------------------- #
+
+
+	#ffffff -------------------rgb(255, 255, 255)---------------- 01
+	#000000 -------------------rgb(0, 0, 0)---------------------- 02
+	#bf392b -------------------rgb(191, 57, 43)------------------ 03 Replace Only This Color To Change Whole Color Scheme
+	#dddddd -------------------rgb(221, 221, 221)---------------- 04
+
+
+*/
+
+
+/*==========================================================================================================================================
+
+											SEPARATE NAVBAR HEADER VERSION COLORS (MAROON)
+
+==========================================================================================================================================*/
+
+	
+/*=======================================================
+	---00---			
+	NAVIGATION BAR
+========================================================*/
+
+/*=============== NAVBAR ===============*/
+
+.separate_navbar_navbar  {
+
+	background: transparent;
+
+}
+
+.separate_navbar_navbar_responsive  {
+
+	background: #ffffff;
+
+}
+
+.separate_navbar_navbar.affix  {
+
+	background: #ffffff;
+	box-shadow: 0px 0px 10px #dddddd;
+
+}
+
+.separate_navbar_navbar_nav>li>a,
+.separate_navbar_navbar_nav>li>a:visited {
+
+	color: #bf392b !important;
+
+}
+
+.separate_navbar_navbar_nav>li>a:hover,
+.separate_navbar_navbar_nav>li>a:active,
+.separate_navbar_navbar_nav>li>a:focus {
+
+	color: #bf392b !important;
+	
+}
+
+.separate_navbar_navbar_nav>li>a:before {
+
+
+	background: #bf392b;
+
+}
+
+.separate_navbar_navbar_nav>li>a,
+.separate_navbar_navbar_nav>li>a:visited,
+.separate_navbar_navbar_nav>li>a:hover,
+.separate_navbar_navbar_nav>li>a:active,
+.separate_navbar_navbar_nav>li>a:focus {
+
+	background: transparent !important;
+
+}
+
+.separate_navbar_navbar_toggle .separate_navbar_top_icon_bar,
+.separate_navbar_navbar_toggle .separate_navbar_bottom_icon_bar {
+
+	background: #bf392b !important;
+
+}
+
+.separate_navbar_navbar_toggle.collapsed .separate_navbar_top_icon_bar,
+.separate_navbar_navbar_toggle.collapsed .separate_navbar_middle_icon_bar,
+.separate_navbar_navbar_toggle.collapsed .separate_navbar_bottom_icon_bar {
+
+	background: #bf392b !important;
+
+}
+
+.separate_navbar_navbar_toggle,
+.separate_navbar_navbar_toggle:hover,
+.separate_navbar_navbar_toggle:active,
+.separate_navbar_navbar_toggle:focus {
+
+	background: transparent !important;
+
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media (max-width: 991px) {
+
+	/*=============== NAVBAR ===============*/
+	
+	.separate_navbar_navbar {
+
+		background: #ffffff;
+
+	}
+
+	.separate_navbar_navbar.affix {
+
+		background: #ffffff;
+
+	}
+
+}
+
+/*=============== DROPDOWN ===============*/
+
+.separate_navbar_dropdown_menu  {
+
+	background: #ffffff;
+
+}
+
+.separate_navbar_dropdown_menu li a,
+.separate_navbar_dropdown_menu li a:visited {
+
+	color: #000000 !important;
+
+}
+
+.separate_navbar_dropdown_menu li a:hover,
+.separate_navbar_dropdown_menu li a:active,
+.separate_navbar_dropdown_menu li a:focus {
+
+	color: #ffffff !important;
+
+}
+
+.separate_navbar_dropdown_menu li a:hover,
+.separate_navbar_dropdown_menu li a:active,
+.separate_navbar_dropdown_menu li a:focus {
+
+	background: #bf392b !important;
+
+}
+
+.separate_navbar_dropdown_menu {
+
+	box-shadow: 0px 0px 5px #dddddd;
+
+}
+
+/*=============== SHORTCODES, FEATURES, MEGA, SHOP ===============*/
+
+.separate_navbar_dropdown_menu_mega,
+.separate_navbar_dropdown_menu_shop {
+
+	background: #ffffff;
+
+}
+
+.separate_navbar_features_list>ul>li >h4,
+.separate_navbar_dropdown_menu_mega>li>ul>li>h4,
+.separate_navbar_dropdown_menu_mega>li>ul>li>h5,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:visited,
+.separate_navbar_dropdown_menu_shop_col>h5>a,
+.separate_navbar_dropdown_menu_shop_col>h5>a:visited {
+
+	color: #bf392b !important;
+
+}
+
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:hover,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:active,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:focus,
+.separate_navbar_dropdown_menu_shop_col>h5>a:hover,
+.separate_navbar_dropdown_menu_shop_col>h5>a:active,
+.separate_navbar_dropdown_menu_shop_col>h5>a:focus {
+
+	color: #bf392b !important;
+
+}
+
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:hover,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:active,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>h5>a:focus,
+.separate_navbar_dropdown_menu_shop_col>h5>a:hover,
+.separate_navbar_dropdown_menu_shop_col>h5>a:active,
+.separate_navbar_dropdown_menu_shop_col>h5>a:focus {
+
+	background: transparent !important;
+
+}
+
+.separate_navbar_shortcodes_list ul li a,
+.separate_navbar_shortcodes_list ul li a:visited,
+.separate_navbar_features_list ul li a,
+.separate_navbar_features_list ul li a:visited,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:visited,
+.separate_navbar_dropdown_menu_mega>li>ul>li>p,
+.separate_navbar_dropdown_menu_mega>li>ul>li>div>div>p,
+.separate_navbar_dropdown_menu_shop_col>p {
+
+	color: #000000 !important;
+
+}
+
+.separate_navbar_shortcodes_list ul li a:hover,
+.separate_navbar_shortcodes_list ul li a:active,
+.separate_navbar_shortcodes_list ul li a:focus,
+.separate_navbar_features_list ul li a:hover,
+.separate_navbar_features_list ul li a:active,
+.separate_navbar_features_list ul li a:focus,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:hover,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:active,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:focus {
+
+	color: #bf392b !important;
+
+}
+
+.separate_navbar_shortcodes_list ul li a:hover,
+.separate_navbar_shortcodes_list ul li a:active,
+.separate_navbar_shortcodes_list ul li a:focus,
+.separate_navbar_features_list ul li a:hover,
+.separate_navbar_features_list ul li a:active,
+.separate_navbar_features_list ul li a:focus,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:hover,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:active,
+.separate_navbar_dropdown_menu_mega>li>ul>li>a:focus {
+
+	background: transparent !important;
+
+}
+
+/*=======================================================
+	---01---			
+	SLIDER
+========================================================*/
+
+.separate_navbar_carousel_wrapper {
+
+	background: #000000;
+
+}
+
+/*========== LEFT/RIGHT CONTROL ==========*/
+
+.separate_navbar_carousel_control_left,
+.separate_navbar_carousel_control_left:hover,
+.separate_navbar_carousel_control_left:active,
+.separate_navbar_carousel_control_left:focus,
+.separate_navbar_carousel_control_right,
+.separate_navbar_carousel_control_right:hover,
+.separate_navbar_carousel_control_right:active,
+.separate_navbar_carousel_control_right:focus {
+
+	color: #bf392b;
+	background: #ffffff !important;
+
+}
+
+/*=============== CAPTION ===============*/
+
+.separate_navbar_carousel_caption h2,
+.separate_navbar_carousel_caption h1 {
+
+	color: #ffffff;
+
+}
+
+.separate_navbar_carousel_button_colored,
+.separate_navbar_carousel_button_colored:visited {
+
+	color: #bf392b;
+
+}
+
+.separate_navbar_carousel_button_colored:hover,
+.separate_navbar_carousel_button_colored:active,
+.separate_navbar_carousel_button_colored:focus {
+
+	color: #ffffff !important;
+
+}
+
+.separate_navbar_carousel_button_colored,
+.separate_navbar_carousel_button_colored:visited {
+
+	background: #bf392b;
+
+}
+
+.separate_navbar_carousel_button_colored:hover,
+.separate_navbar_carousel_button_colored:active,
+.separate_navbar_carousel_button_colored:focus {
+
+	background: #bf392b !important;
+
+}
+
+.separate_navbar_carousel_button_colored:before {
+
+	background: #ffffff;
+
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media only screen and (max-width: 600px) {
+	
+	/*========== LEFT/RIGHT CONTROL ==========*/
+	
+	.separate_navbar_carousel_control_left,
+	.separate_navbar_carousel_control_right,
+	.separate_navbar_carousel_control_left:hover,
+	.separate_navbar_carousel_control_left:active,
+	.separate_navbar_carousel_control_left:focus,
+	.separate_navbar_carousel_control_right:hover,
+	.separate_navbar_carousel_control_right:active,
+	.separate_navbar_carousel_control_right:focus	{
+
+		background: transparent !important;
+
+	}
+
+}
+
+
+/*=======================================================
+	---02---	
+	MODAL
+========================================================*/
+
+.separate_navbar_modal_fade {
+
+	background: rgba(255, 255, 255, 0.4);
+
+}
+
+.separate_navbar_modal_header>button,
+.separate_navbar_modal_body_form  button,
+#separate_navbar_contact_us_modal_social_icons ul li a,
+#separate_navbar_contact_us_modal_social_icons ul li a:hover,
+#separate_navbar_contact_us_modal_social_icons ul li a:active,
+#separate_navbar_contact_us_modal_social_icons ul li a:focus {
+
+	color: #ffffff;
+
+}
+
+.separate_navbar_modal_header {
+
+	color: #ffffff;
+	background: #000000;
+
+}
+
+.separate_navbar_modal_header >button:hover,
+.separate_navbar_modal_header>button:active,
+.separate_navbar_modal_header>button:focus {
+
+	color: #bf392b;
+
+}
+
+.separate_navbar_modal_body,
+.separate_navbar_modal_body_form div input,
+.separate_navbar_modal_body_form div textarea {
+
+	background: #ffffff;
+
+}
+
+.separate_navbar_modal_body_form div input,
+.separate_navbar_modal_body_form div textarea {
+
+	color: #000000;
+
+}
+
+.separate_navbar_modal_body_form div input,
+.separate_navbar_modal_body_form div textarea {
+
+	border: 1px solid #dddddd;
+
+}
+
+.separate_navbar_modal_body_form div input:focus,
+.separate_navbar_modal_body_form div textarea:focus {
+
+	border: 1px solid #bf392b;
+
+}
+
+.separate_navbar_modal_body_form button,
+#separate_navbar_contact_us_modal_social_icons ul li a  {
+
+	background: #bf392b;
+
+}
+
+.separate_navbar_modal_body_form button:before,
+#separate_navbar_contact_us_modal_social_icons ul li a:before {
+
+	background: #000000;
+
+}
+
+.separate_navbar_modal_body_form button:hover,
+.separate_navbar_modal_body_form button:active,
+.separate_navbar_modal_body_form button:focus {
+
+	color: #ffffff !important;
+	background: #bf392b !important;
+
+}
+
+#separate_navbar_modal_user_image img {
+
+	background: transparent !important;
+
+}
+
+.separate_navbar_modal_footer a {
+
+	color: #000000;
+
+}
