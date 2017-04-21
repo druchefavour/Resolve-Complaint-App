@@ -1,19 +1,20 @@
 {
-  "name": "resolve",
+  "name": "mongoapp",
   "version": "1.0.0",
-  "description": "A consumer complaint app",
+  "description": "Create mongodb for consumer complaint app",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/druchefavour/Resolve-Complaint-App.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node test.js"
   },
   "author": "Dr. Angus Ogubuike",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/druchefavour/Resolve-Complaint-App/issues"
-  },
-  "homepage": "https://github.com/druchefavour/Resolve-Complaint-App#readme"
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1"
+  }
 }
