@@ -122,11 +122,6 @@ function getData(){
   });
 }
 
-app.get('/', function(req, res) {
-  console.log('hit chat route')
-  res.sendFile(__dirname + '/public/hompage.html');
-})
-
 
 app.get('/chat', function(req, res) {
   console.log('hit chat route')
