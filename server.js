@@ -122,6 +122,10 @@ function getData(){
   });
 }
 
+app.get('/home', function(req, res) {
+  console.log('hit home route')
+  res.sendFile(__dirname + '/public/homepage.html');
+})
 
 app.get('/chat', function(req, res) {
   console.log('hit chat route')
