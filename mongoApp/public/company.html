@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log Consumer Complaint</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <!-- Include Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">reSOLVE</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="complaint.html">Consumer</a></li>
+        <li class="active"> <a href="company.html">Company</a></li>
+        <li><a href="chat">Chat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+  <div id="table-location">
+
+    </div>
+    <br/>
+    <!-- Location where the chart will be added -->
+    <div id="chart-location">
+    </div>
+
+    <h2>Tabular Data</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="category-row">
+          <td>Month</td>
+          <!-- \{{#each categories}} <td>\{{label}}</td> \{{/each }} -->
+        </tr>
+      </thead>
+      <tbody class="dataset-body">
+        <!-- \{{#each dataset}}
+        <tr>
+          <td>\{{seriesname}}</td>
+          \{{#each data}} <td>\{{value}}</td> \{{/each}}
+        </tr>
+        \{{/each}} -->
+      </tbody>
+    </table>
+
+  </div>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+  <script src="js/libs/fusioncharts_demo.js" charset="utf-8"></script>
+  <script src="js/libs/fusioncharts.js"></script>
+  <script src="js/libs/fusioncharts.charts.js"></script>
+  <script src="js/libs/fusioncharts.theme.zune.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.0/handlebars.js"></script>
+  <script type="text/javascript">
+    $.get('loggedComplaints').then(function(data) {
+        console.log(data)
+
+        var categories = data.categories;
+        var datasets = data.dataset;
+
+        var categoriesDiv = '<td></td>';
+
+        categories.forEach(function(category) {
+          categoriesDiv += '<td>' + category.label + '</td>'
+        })
+
+        var dataDiv = '';
+
+        datasets.forEach(function(dataset) {
+          dataDiv = dataDiv + '<tr><td>' + dataset.seriesname + '</td>';
+          dataset.data.forEach(function(dataItem) {
+            dataDiv = dataDiv + '<td>' + dataItem.value + '</td>'
+          });
+
+          dataDiv = dataDiv + '</tr>'
+        });
+
+        console.log(dataDiv)
+
+        $('.category-row').html(categoriesDiv);
+        $('.dataset-body').html(dataDiv);
+    })
+
+
+  </script>
+</body>
+</html>
