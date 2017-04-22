@@ -124,14 +124,14 @@ class App extends Component {
     let form_input
     if (!data.author) {
       form_input = (
-        <div>
+        <div className="panel-body">
           Hi, what is your name?<br />
           <Input type="text" ref="author" />
         </div>
       )
     } else {
       form_input = (
-        <div>
+        <div className="panel-body">
           Hello { data.author }, type a message:<br />
           <Input type="text" ref="message" />
         </div>
@@ -157,16 +157,18 @@ class App extends Component {
     }
     const scroll_area_style = {
       ...S('h-' + (window.innerHeight - 140)),
-      overflowY: 'scroll'
-    }
+      overflowY: 'scroll',
+      
     return (
       <div>
         <div style={ S('pl-15') }>
           <h2>React Chat App</h2>
+          <hr/>
           <div ref="messages_scroll_area" style={ scroll_area_style }>
             <ul style={ S('p-0') }>{ messages_list }</ul>
           </div>
         </div>
+        <hr><hr>
         <div style={ S('absolute b-0 w-100p pl-15 pr-15') }>
           <form onSubmit={ this.handleSubmit.bind(this) }>
             { form_input }
