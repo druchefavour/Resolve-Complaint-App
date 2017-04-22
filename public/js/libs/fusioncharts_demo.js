@@ -2,7 +2,7 @@ var chartData;
 
 $(function(){
   $.ajax({
-    url: 'http://localhost:3000/loggedComplaints',
+    url: 'https://localhost:3000/loggedComplaints',
     type: 'GET',
     success : function(data) {
       chartData = data;
