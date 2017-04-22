@@ -88,7 +88,37 @@
       </tbody>
     </table>
 
+    <h1 class="jumbotron text-center">Company Workspace</h1>
+   <form action="/submit" method="post">
+    <div class="row">
+     <div class="col-sm-7">
+       <div class="panel panel-default">
+        <div class="panel-heading">Logged Complaint</div>
+         <div class="panel-body">
+           <div class="row">
+             <div class="form-group">
+              <div class="col-xs-4">
+               <label for="Month">Month</label>
+               <input class="form-control" id="month-input" type="month" name="month" placeholder="Month">
+             </div>
+             <div class="col-xs-5">
+                <label for="Logged Complaint">Logged Complaint</label>
+               <input type="number" class="form-control" id="logged_complaint" placeholder="Enter Number">
+             </div>
+            </div> 
+           </div>
+           <hr>
+           <div class="form-group">
+             <label for="Resolved Complaint">Resolved Complaint</label>
+               <input type="number" class="form-control" id="logged_complaint" placeholder="Enter Number">
+           </div>
+            <input class="center-block" type="submit">
+        </div>
+      </div>
+    </div>
   </div>
+</form>
+
   <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
   <script src="js/libs/fusioncharts_demo.js" charset="utf-8"></script>
   <script src="js/libs/fusioncharts.js"></script>
