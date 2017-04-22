@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReSolve</title>
     <!---------------Favicon -------------------->
-    <link rel="shortcut_icon" id="favicon" href=".lib_mon/images/favi2.png" type=image icon>
+    <link rel="shortcut icon" id="favicon" href="./lib_mon/images/favi.png type=image icon">
 
     <!--======= Google Web Fonts =========-->
-    <link rel="stylesheet" id="font" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
 
@@ -36,11 +36,12 @@
     <link href="./lib_mon/css/animate.min.css" rel="stylesheet">
 
     <!--======= Immortal Header StyleSheets =========-->
-    <link href="./lib_mon/css/separate_navbar_header_responsive.css" rel="stylesheet" media="all">
-    <link href="./lib_mon/css/single_css_file/separate_navbar_header_mega.css" rel="stylesheet" media="all">
-    <!------------CSS ---------------->
+    <!--link href="./lib_mon/css/separate_navbar_header_mega.css" rel="stylesheet" media="all"-->
 
-    <link href="./lib_mon/css/style.css" rel="stylesheet" media="all">
+
+    <!------------------------CSS ---------------------->
+
+    <link href="./lib_mon/css/style2.css" rel="stylesheet" media="all">
 </head>
 
 <body>
@@ -52,142 +53,226 @@
 
         <!--*-*-*-*-*-*-*-*-*-*- NAVIGATION BAR *-*-*-*-*-*-*-*-*-*-->
 
-        <nav class="navbar navbar-default separate_navbar_navbar-pull-right" data-spy="affix" data-offset-top="25" data-offset-bottom="0">
+        <nav class="navbar navbar-default separate_navbar_navbar-pull-right" data-spy="affix" data-offset-top="1" data-offset-bottom="0">
 
-            <div class="container separate_navbar_navbar_responsive">
-
-                <!--======= NavBar Header =========-->
-                <div class="navbar-header separate_navbar_navbar_header">
-
-                    <!--======= Brand Logo =========-->
-                    <a class="navbar-brand" href="homepage.html">
-                        <img class="img-responsive" src="./lib_mon/images/logo%20(4).png" alt="resolve logo" id="separate_navbar_header_logo" />
-                    </a>
-
-                    <!--======= Toggle Button =========-->
-                    <button type="button" class="navbar-toggle separate_navbar_navbar_toggle collapsed" data-toggle="collapse" data-target="#separateNavbar">
-                        <span class="icon-bar separate_navbar_top_icon_bar"></span>
-                        <span class="icon-bar separate_navbar_middle_icon_bar"></span>
-                        <span class="icon-bar separate_navbar_bottom_icon_bar"></span>
-                    </button>
-
-                </div>
+            <!--======= NavBar Header =========-->
+            <div class="navbar-header separate_navbar_navbar_header">
+                <!--======= Brand Logo =========-->
+                <a class="navbar-brand" href="homepage.html">
+                    <img class="img-responsive" src="./lib_mon/images/logo%20(4).png" alt="resolve logo" id="resolve-logo" />
+                </a>
 
 
-                <div class="collapse navbar-collapse" id="separateNavbar">
-                    <ul id="dropdown_slide" class="nav navbar-nav separate_navbar_navbar_nav pull-right">
 
-                        <!--======= Home Tab =========-->
-                        <li class="active">
-                            <a href="homepage.html">Home</a>
-                        </li>
 
-                        <!--======= Multi Levels Dropdown =========-->
-                        <li class="dropdown separate_navbar_dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-handshake-o"></i>Target Resolutions
-                                <span class="fa fa-angle-down separate_navbar_fa_angle_down"></span>
-                            </a>
+                <!--======= Toggle Button =========-->
+                <button type="button" class="navbar-toggle separate_navbar_navbar_toggle collapsed" data-toggle="collapse" data-target="#separatePostNavbar">
+                    <span class="icon-bar separate_navbar_top_icon_bar"></span>
+                    <span class="icon-bar separate_navbar_middle_icon_bar"></span>
+                    <span class="icon-bar separate_navbar_bottom_icon_bar"></span>
+                </button>
+            </div>
 
-                            <ul class="dropdown-menu separate_navbar_dropdown_menu">
 
-                                <!--======= Right Dropdown =========-->
-                                <li class="dropdown separate_navbar_dropdown separate_navbar_dropdown_right">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loans
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </a>
+            <div class="collapse navbar-collapse" id="separateNavbar">
+                <ul id="dropdown_slide" class="nav navbar-nav separate_navbar_navbar_nav-pull-right">
 
-                                    <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu_right">
-                                        <li><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
-                                        <li><a href="#"><i class="fa fa-car fa-fw" aria-hidden="true"></i>&nbsp; Auto</a></li>
-                                        <li><a href="#"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp; Student</a></li>
-                                        <li><a href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; Short-Term</a></li>
-                                        <li><a href="#"><i class="fa fa-money fa-fw" aria-hidden="true"></i>&nbsp; Payday</a></li>
-                                    </ul>
+                    <!--======= Home Tab =========-->
+                    <li class="active">
+                        <a href="homepage.html">Home</a>
+                    </li>
 
-                                </li>
+                    <!--======= Multi Levels Dropdown =========-->
+                    <li class="dropdown separate_navbar_dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-handshake-o"></i>Target Resolutions
+								<span class="fa fa-angle-down separate_navbar_fa_angle_down"></span>
+							</a>
 
-                                <!------Closes Dropdown Menu ------->
-                                <!--======= Right Dropdown =========-->
-                                <li class="dropdown separate_navbar_dropdown separate_navbar_dropdown_right">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Services
-                                    <i class="fa fa-angle-double-right"></i>
-                                    </a>
+                        <ul class="dropdown-menu separate_navbar_dropdown_menu">
 
-                                    <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu_right">
-                                        <li><a href="#"><i class="fa fa-university fa-fw" aria-hidden="true"></i>&nbsp; Bank Accounts</a></li>
-                                        <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>&nbsp; Debt Collection</a></li>
-                                        <li><a href="#"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i>&nbsp; Credit Card</a></li>
-                                        <li><a href="#"><i class="fa fa-exchange fa-fw" aria-hidden="true"></i>&nbsp; Money Transfer</a></li>
-                                    </ul>
+                            <!--======= Right Dropdown =========-->
+                            <li class="dropdown separate_navbar_dropdown separate_navbar_dropdown_right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loans
+										<i class="fa fa-angle-double-right"></i>
+									</a>
 
-                                </li>
-                                <!---------Closes 2nd Dropdown Menu ----------->
+                                <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu_right">
+                                    <li><a href="homepage.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+                                    <li><a href="#"><i class="fa fa-car fa-fw" aria-hidden="true"></i>&nbsp; Auto</a></li>
+                                    <li><a href="#"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp; Student</a></li>
+                                    <li><a href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; Short-Term</a></li>
+                                    <li><a href="#"><i class="fa fa-money fa-fw" aria-hidden="true"></i>&nbsp; Payday</a></li>
+                                </ul>
 
-                                <li><a href="#">First Level Dropdown</a></li>
+                            </li>
+                            <!------Closes Dropdown Menu ------->
+                            <!--======= Right Dropdown =========-->
+                            <li class="dropdown separate_navbar_dropdown separate_navbar_dropdown_right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Services
+									<i class="fa fa-angle-double-right"></i>
+									</a>
 
-                                <!--======= Left Dropdown =========-->
-                                <li class="dropdown separate_navbar_dropdown separate_navbar_dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Services
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </a>
+                                <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu_right">
+                                    <li><a href="#"><i class="fa fa-university fa-fw" aria-hidden="true"></i>&nbsp; Bank Accounts</a></li>
+                                    <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>&nbsp; Debt Collection</a></li>
+                                    <li><a href="#"><i class="fa fa-credit-card-alt fa-fw" aria-hidden="true"></i>&nbsp; Credit Card</a></li>
+                                    <li><a href="#"><i class="fa fa-exchange fa-fw" aria-hidden="true"></i>&nbsp; Money Transfer</a></li>
+                                </ul>
 
-                                    <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu">
-                                        <li><a href="#"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i>&nbsp; Electronics</a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-bag fa-fw" aria-hidden="true"></i>&nbsp; Clothing</a></li>
-                                        <li><a href="#"><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>&nbsp; Restaurants</a></li>
-                                        <li><a href="#"><i class="fa fa-heartbeat fa-fw" aria-hidden="true"></i>&nbsp; Gym Memberships</a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>&nbsp; Grocery Stores</a></li>
-                                    </ul>
+                            </li>
+                            <!-------------Closes 2nd Dropdown Menu ----------->
 
-                                </li>
+                            <li><a href="#">First Level Dropdown</a></li>
 
-                                <li><a href="#">First Level Dropdown</a></li>
+                            <!--======= Left Dropdown =========-->
+                            <li class="dropdown separate_navbar_dropdown separate_navbar_dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Services
+										<i class="fa fa-angle-double-right"></i>
+									</a>
 
-                            </ul>
-                        </li>
+                                <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu">
+                                    <li><a href="#"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i>&nbsp; Electronics</a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag fa-fw" aria-hidden="true"></i>&nbsp; Clothing</a></li>
+                                    <li><a href="#"><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>&nbsp; Restaurants</a></li>
+                                    <li><a href="#"><i class="fa fa-heartbeat fa-fw" aria-hidden="true"></i>&nbsp; Gym Memberships</a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>&nbsp; Grocery Stores</a></li>
+                                </ul>
 
-                        <!--======= Share Tab =========-->
-                        <li class="dropdown separate_navbar_dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-share"></span>
-                            </a>
+                            </li>
+                            <!-----------Closes 3rd Dropdown Menu ------------>
+                            <!--======= Image Part =========-->
+                            <li class="col-sm-4 separate_navbar_mega_image">
 
-                            <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu_share pull-right">
+                                <ul>
+                                    <li class="separate_navbar_mega_image_heading">
+                                        <h4>Dropdown Image</h4>
+                                    </li>
 
-                                <li>
-                                    <a href="#separate_navbar_contact_us_modal" data-toggle="modal">
-                                        <i class="fa fa-pencil"></i> Contact Us
-                                    </a>
-                                </li>
+                                    <li>
+                                        <img src="./lib_mon/images/mega_dropdown_img.png" alt="mega dropdown img" />
+                                    </li>
+                                    <li>
+                                        <h5>Lorem ipsum dolor sit amet:</h5>
+                                        <p> Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui. Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum</p>
+                                    </li>
+                                </ul>
 
-                                <li>
-                                    <a href="#separate_navbar_login_modal" data-toggle="modal">
-                                        <i class="fa fa-sign-in"></i> Login
-                                    </a>
-                                </li>
+                            </li>
 
-                                <li>
-                                    <a href="#separate_navbar_register_modal" data-toggle="modal">
-                                        <i class="fa fa-key"></i> Register
-                                    </a>
-                                </li>
+                            <!--======= Posts Part =========-->
+                            <li class="col-sm-5 separate_navbar_mega_posts">
 
-                            </ul>
+                                <ul>
 
-                        </li>
+                                    <li class="separate_navbar_mega_posts_heading">
+                                        <h4>Popular Posts</h4>
+                                    </li>
 
-                        <!--======= Search Tab =========-->
-                        <li>
-                            <a href="#separate_navbar_search_modal" data-toggle="modal">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
-                        </li>
+                                    <!--======= First Post =========-->
+                                    <li>
+                                        <div class="row separate_navbar_mega_posts_row">
 
-                    </ul>
+                                            <div class="col-sm-2 separate_navbar_mega_posts_col_img">
+                                                <img src="./lib_mon/images/mega_post_01.png" alt="mega post 01" />
+                                            </div>
+                                            <div class="col-sm-10 separate_navbar_mega_posts_col_text">
+                                                <h5><a href="#">Sollicitudin dui quam et tortor</a></h5>
+                                                <p>Phasellus tempus massa aliquet urna. Integer fringilla quam eget dolor. Curabitur mattis.</p>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                </div>
+                                    <!--======= Second Post =========-->
+                                    <li>
+                                        <div class="row separate_navbar_mega_posts_row">
+
+                                            <div class="col-sm-2 separate_navbar_mega_posts_col_img">
+                                                <img src="./lib_mon/images/mega_post_02.png" alt="mega post 02" />
+                                            </div>
+                                            <div class="col-sm-10 separate_navbar_mega_posts_col_text">
+                                                <h5><a href="#">Sollicitudin dui quam et tortor</a></h5>
+                                                <p>Phasellus tempus massa aliquet urna. Integer fringilla quam eget dolor. Curabitur mattis.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--======= Third Post =========-->
+                                    <li>
+                                        <div class="row separate_navbar_mega_posts_row">
+
+                                            <div class="col-sm-2 separate_navbar_mega_posts_col_img">
+                                                <img src="./lib_mon/images/mega_post_03.png" alt="mega post 03" />
+                                            </div>
+                                            <div class="col-sm-10 separate_navbar_mega_posts_col_text">
+                                                <h5><a href="#">Sollicitudin dui quam et tortor</a></h5>
+                                                <p>Phasellus tempus massa aliquet urna. Integer fringilla quam eget dolor. Curabitur mattis.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--======= Fourth Post =========-->
+                                    <li>
+                                        <div class="row separate_navbar_mega_posts_row">
+
+                                            <div class="col-sm-2 separate_navbar_mega_posts_col_img">
+                                                <img src="./lib_mon/images/mega_post_04.png" alt="mega post 04" />
+                                            </div>
+                                            <div class="col-sm-10 separate_navbar_mega_posts_col_text">
+                                                <h5><a href="#">Sollicitudin dui quam et tortor</a></h5>
+                                                <p>Phasellus tempus massa aliquet urna. Integer fringilla quam eget dolor. Curabitur mattis.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!--======= Share Tab =========-->
+                    <li class="dropdown separate_navbar_dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-share"></span>
+                        </a>
+
+                        <ul class="dropdown-menu separate_navbar_dropdown_menu separate_navbar_dropdown_menu_share pull-right">
+
+                            <li>
+                                <a href="#separate_navbar_contact_us_modal" data-toggle="modal">
+                                    <i class="fa fa-pencil"></i> Contact Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#separate_navbar_login_modal" data-toggle="modal">
+                                    <i class="fa fa-sign-in"></i> Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#separate_navbar_register_modal" data-toggle="modal">
+                                    <i class="fa fa-key"></i> Register
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!--======= Search Tab =========-->
+                    <li>
+                        <a href="#separate_navbar_search_modal" data-toggle="modal">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
         </nav>
+
         <!--*-*-*-*-*-*-*-*-*-*- END NAVIGATION BAR *-*-*-*-*-*-*-*-*-*-->
 
         <!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
@@ -202,7 +287,7 @@
                 <!--========= First slide =========-->
                 <div class="item active">
 
-                    <img src=".lib_mon/images/slideimgtop.png" alt="slider 01" />
+                    <img src="./lib_mon/images/slideimgtop.png" alt="slider 01" />
 
                     <div class="carousel-caption separate_navbar_carousel_caption" data-animation="animated fadeInUp">
 
@@ -219,7 +304,7 @@
                 <!--========= Second slide =========-->
                 <div class="item">
 
-                    <img src=".lib_mon/images/AdobeStock_81225840.jpeg" alt="slider 02" />
+                    <img src="./lib_mon/images/AdobeStock_81225840.jpeg" alt="slider 02" />
 
                     <div class="carousel-caption separate_navbar_carousel_caption" data-animation="animated fadeInUp">
 
@@ -247,7 +332,7 @@
                 <!--========= Four slide =========-->
                 <div class="item">
 
-                    <img src="./lib_mon/images/AdobeStock_113940126.jpeg" alt="slider 04" />
+                    <img src="./lib_mon/images/AdobeStock_113940126.jpeg" alt="slider 03" />
 
                     <div class="carousel-caption separate_navbar_carousel_caption" data-animation="animated fadeInUp">
 
@@ -257,11 +342,10 @@
 
                     </div>
                 </div>
-
-                <!--========= Six slide =========-->
+                <!--========= Five slide =========-->
                 <div class="item">
 
-                    <img src=".lib_mon/images/AdobeStock_93278906.jpeg" alt="slider 03" />
+                    <img src="./lib_mon/images/AdobeStock_65984592.jpeg" alt="slider 03" />
 
                     <div class="carousel-caption separate_navbar_carousel_caption" data-animation="animated fadeInUp">
 
@@ -272,49 +356,20 @@
                     </div>
 
                 </div>
-
-                <!--========= Seven slide =========-->
-                <div class="item">
-
-                    <img src="./lib_mon/images/AdobeStock_39797412.jpeg" alt="slider 03" />
-
-                    <div class="carousel-caption separate_navbar_carousel_caption" data-animation="animated fadeInUp">
-
-                        <h2 data-animation="animated fadeInUp">Powerful Packed Designs</h2>
-                        <h1 data-animation="animated fadeInUp">Designed for Any Website!</h1>
-                        <a href="#" class="separate_navbar_carousel_button_colored" data-animation="animated fadeInUp">Read More</a>
-
-                    </div>
-
-                </div>
-                <!--========= Eight slide =========-->
-                <div class="item">
-
-                    <img src="./lib_mon/images/AdobeStock_65984592.jpeg" alt="slider 05" />
-
-                    <div class="carousel-caption separate_navbar_carousel_caption" data-animation="animated fadeInUp">
-
-                        <h2 data-animation="animated fadeInUp">Powerful Packed Designs</h2>
-                        <h1 data-animation="animated fadeInUp">Designed for Any Website!</h1>
-                        <a href="#" class="separate_navbar_carousel_button_colored" data-animation="animated fadeInUp">Read More</a>
-
-                    </div>
-
-                </div>
-                <!--======= Navigation Buttons =========-->
-
-                <!--======= Left Button =========-->
-                <a class="left-carousel-control separate_navbar_carousel_control_left" href="#immortal_carousel" role="button" data-slide="prev">
-                    <span class="fa fa-angle-double-left separate_navbar_carousel_control_icons" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-
-                <!--======= Right Button =========-->
-                <a class="right-carousel-control separate_navbar_carousel_control_right" href="#immortal_carousel" role="button" data-slide="next">
-                    <span class="fa fa-angle-double-right separate_navbar_carousel_control_icons" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
+            <!--======= Navigation Buttons =========-->
+
+            <!--======= Left Button =========-->
+            <a class="left carousel-control separate_navbar_carousel_control_left" href="#immortal_carousel" role="button" data-slide="prev">
+                <span class="fa fa-angle-double-left separate_navbar_carousel_control_icons" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!--======= Right Button =========-->
+            <a class="right carousel-control separate_navbar_carousel_control_right" href="#immortal_carousel" role="button" data-slide="next">
+                <span class="fa fa-angle-double-right separate_navbar_carousel_control_icons" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
         <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
 
@@ -523,79 +578,72 @@
                 </div>
             </div>
         </div>
-        <!--=======End Contact Us Modal =========-->
     </header>
+    <!--======= End Contact Us Modal =========-->
 
     <div class="container-footer">
-        <!-----------Footer ------------>
+        <!----------- Footer ------------>
         <footer class="footer-bs">
-            <!--footer start from here-->
-           
-                                    <div class="row1">
-                        <div class="col-md-3 col-sm-6 footer-col">
-                            <div class="logofooter"> Logo</div>
-                            <p>Let us help you grow your business</p>
-                            <p><i class="fa fa-map-pin"></i> B28, Houston, Tx</p>
-                            <p><i class="fa fa-phone"></i> Phone (India) : +1 555-777-9311</p>
-                            <p><i class="fa fa-envelope"></i> E-mail : info@amdevelopers.com</p>
 
-                        </div>
-                        <div class="col-md-3 col-sm-6 footer-col">
-                            <h6 class="heading7">GENERAL LINKS</h6>
-                            <ul class="footer-ul">
-                                <li><a href="#"> Career</a></li>
-                                <li><a href="#"> Privacy Policy</a></li>
-                                <li><a href="#"> Terms & Conditions</a></li>
-                                <li><a href="#"> Client Gateway</a></li>
-                                <li><a href="#"> Ranking</a></li>
-                                <li><a href="#"> Case Studies</a></li>
-                                <li><a href="#"> Frequently Ask Questions</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6 footer-col">
-                            <h6 class="heading7">LATEST POST</h6>
-                            <div class="post">
-                                <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-                                <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-                                <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 footer-col">
-                            <h6 class="heading7">Social Media</h6>
-                            <ul class="footer-social">
-                                <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                
-            <!--footer start from here-->
-            <div class="col-md-12">
-                <div class="copyright">
-                    <div class="sun-container">
-                        <p>© 2017 - All Rights Reserved 
-                            <img src="./lib_mon/images/sunlo.png" alt="footerlogo" id="sun"> A.M. Developers
-                        </p>
-                    </div>
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>ReSolve</h2>
+                <p>© 2017 A.M. Web Developers, All rights reserved</p>
+                <img src="./lib_mon/images/urban-sun-2.png" id="amlogo" alt="urban sun">
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sign-In</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
                 </div>
             </div>
-           
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://twitter.com/go2girlsqrd">Twitter</a></li>
+
+
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                </div>
+                <!-- /input-group -->
+
+            </div>
         </footer>
     </div>
-            <!--*-*-*-*-*-*-*-*-*-*- End Header Section *-*-*-*-*-*-*-*-*-*-->
-            <!--======= jQuery =========-->
-            <script src="./lib_mon/js/jquery-1.11.3.min.js"></script>
-            <!-- jQuery -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-            <!-- Latest compiled and minified JavaScript -->
-            <!--======= Bootstrap =========-->
-            <script src="./lib_mon/js/bootstrap.min.js"></script>
 
-            <script src="./lib_mon/js/smooth-scroll.js"></script>
-            <!--======= Customize =========-->
-            <script src="./lib_mon/js/resolve_header.js"></script>
+    <!--======= jQuery =========-->
+    <script src="./lib_mon/js/jquery-1.11.3.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <!--======= Bootstrap =========-->
+    <script src="./lib_mon/js/bootstrap.min.js"></script>
+
+    <script src="./lib_mon/js/smooth-scroll.js"></script>
+    <!--======= Customize =========-->
+    <script src="./lib_mon/js/resolve_header.js"></script>
 
 
 </body>
