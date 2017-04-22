@@ -15,7 +15,7 @@ var uristring = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.e
 
 // The app server will listen to an appriopriate port, or default to port 3000
 
-var theport = process.env.PORT || 3300;
+var theport = process.env.PORT || 3000;
 
 // Bring in our Models: Complaint and User
 var Complaint = require("./models/Complaint.js");
@@ -280,6 +280,6 @@ app.get("/populateduser", function(req, res) {
 });
 
 // Listen on Port 3000
-app.listen(process.env.PORT || 3300, function(){
-  console.log('listening on 3300');
+app.listen(process.env.PORT || 3000, function(){
+  console.log('listening on 3000');
 });
