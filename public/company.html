@@ -11,23 +11,56 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">reSOLVE</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="complaint.html">Consumer</a></li>
-        <li class="active"> <a href="company.html">Company</a></li>
-        <li><a href="chat">Chat</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="navbar navbar-default navbar-static-top">
+   <div class="container">
+     <a class="navbar-logo" href="homepage.html"><img src="./lib_mon/images/logo.png" alt="resolve logo" width="200" height="100"  class="navbar-brand"></a>
+     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"></button>
+
+     <span class="icon-bar"></span>
+     <ul class="nav navbar-nav">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="complaint.html">Consumer</a></li>
+      <li class="active"><a href="company.html">Company</a></li>
+      <li><a href="./reactApp/index.html">Chat</a></li>
+        <!--=============================================================-->
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li><a href="#">Bank Account or Service</a></li>
+         <li><a href="#">Credit Card</a></li>
+         <li><a href="#">Credit Reporting</a></li>
+         <li><a href="#">Debt Collection</a></li>
+         <li><a href="#">Money Transfer</a></li>
+         <li><a href="#">Mortgage</a></li>
+         <li><a href="#">Other Financial Service</a></li>
+         <li><a href="#">Payday Loan</a></li>
+         <li><a href="#">Prepaid Card</a></li>
+         <li><a href="#">Student Loans</a></li>
+         <li><a href="#">Vehicle / Consumer Loan</a></li>
+         <li><a href="#">One more separated link</a></li>
+       </ul>
+      </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li><a href="#">Twitter</a></li>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="#">Snapchat</a></li>
+         <li role="separator" class="divider"></li>
+         <li><a href="#">Instagram</a></li>
+        </ul>
+    </li>
+       <!--=============================================================-->
+
+     <li><a href="#">                              |</a></li>
+     <div class="nav navbar-nav navbar-right">
+       <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><br>
+       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     </div>
+    </ul>
+  </div>
+ </div>
+
   <div class="container">
   <div id="table-location">
 

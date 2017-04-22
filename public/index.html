@@ -1,205 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>ReSolve</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Include google API css -->
-	<link rel="stylesheet" type="text/css" href="css/addressStyle.css">
-	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-	<!-- Include Bootstrap -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <title>ReSolve</title>
+    <!-- Responsive Link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./lib_mon/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lib_mon/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib_mon/css/animate.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" id="favicon" href="./lib_mon/images/favi.png" type="image/png">
+    <!-- Responsive Link -->
+    <link rel="stylesheet" type="text/css" href="./lib_mon/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./lib_mon/css/style.css">
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-	<!-- For Datetimepicker -->
-  <script type="text/javascript" src="C:/Users/OWNER/Google Drive/Bootcamp/Workspace/project_3/Consumer_Complaint/Consumer_Complaint/mongoApp/public/bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="C:/Users/OWNER/Google Drive/Bootcamp/Workspace/project_3/Consumer_Complaint/Consumer_Complaint/mongoApp/public/bower_components/moment/min/moment.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="C:/Users/OWNER/Google Drive/Bootcamp/Workspace/project_3/Consumer_Complaint/Consumer_Complaint/mongoApp/public/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-  <link rel="stylesheet" href="C:/Users/OWNER/Google Drive/Bootcamp/Workspace/project_3/Consumer_Complaint/Consumer_Complaint/mongoApp/public/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
-  <!--Fusion Chart html scripts -->
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.0/handlebars.js"></script>
-  <script src="/public/js/fusioncharts_demo.js" charset="utf-8"></script>
-  <script src="/public/js/fusioncharts.js"></script>
-  <script src="/public/js/fusioncharts.charts.js"></script>
-  <script src="/public/js/fusioncharts.theme.zune.js"></script>
-</head>
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">reSOLVE</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li><a href="homepage.html">Home</a></li>
-        <li class="active"><a href="complaint.html">Consumer</a></li>
-        <li><a href="company.html">Company</a></li>
-        <li><a href="#">Chat</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-  <h1 class="jumbotron text-center">Company Complaint Workspace</h1>
-   <form action="/submit" method="post">
-    <div class="row">
-     <div class="col-sm-7">
-       <div class="panel panel-default">
-        <div class="panel-heading">Company's Representative</div>
-         <div class="panel-body">
-           <div class="row">
-             <div class="form-group">
-	           <div class="col-xs-3">
-	             <label for="title">Title</label>
-	             <select class="form-control" id="title-input">
-	             <option value="" disabled selected hidden>Title</option>
-	             <option value="1">Mr</option>
-	             <option>Mrs</option>
-	             <option>Ms</option>
-	             <option>Dr</option>
-	             </select> 
-	           </div>
+ <div class="navbar navbar-default navbar-static-top">
+   <div class="container">
+     <a class="navbar-logo" href="homepage.html"><img src="./lib_mon/images/logo.png" alt="resolve logo" width="200" height="100"  class="navbar-brand"></a>
+     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"></button>
 
-             <div class="col-xs-4">
-               <label for="firstname">Firstname</label>
-               <input class="form-control" id="firstname-input" type="text" name="firstname" placeholder="Firstname">
-			       </div>
-			       <div class="col-xs-5">
-        			  <label for="lastname">Lastname</label>
-        			  <input class="form-control" id="lastname-input" type="text" name="lastname" placeholder="Lastname">
-			       </div>
-			      </div> 
-		       </div>
-           <hr>
-           <div class="form-group">
-             <label for="exampleInputEmail1">Email address</label>
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="useremail" placeholder="Enter email"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-           </div>
-		   <hr>
-		   <div class="form-group">
-	         <label for="Login-time">ComplaintTime (date and time):</label>
-             <div class="row">
-		       <div class='col-sm-6'>
-		         <div class="form-group">
-		           <div class='input-group date' id='datetimepicker5'>
-		             <input type='text' class="form-control" name="logintime" />
-		               <span class="input-group-addon">
-		                 <span class="glyphicon glyphicon-calendar"></span>
-		                 </span>
-		           </div>
-		          </div>
-		       </div>
-             </div>
-	       </div>
-		   
-		   <div>
-		   	<h5>Address</h5>
-		   </div
-           <!-- Place Auto Complete Form-->
-           <div id="locationField">
-             <input id="autocomplete" name="useraddress" placeholder="Enter your address"
-             onFocus="geolocate()" type="text"></input>
-           </div>
-           <table id="address">
-             <tr>
-               <td class="label">Street address</td>
-               <td class="slimField"><input class="field" id="street_number" disabled="true"></input></td>
-               <td class="wideField" colspan="2"><input class="field" id="route" disabled="true"></input></td>
-             </tr>
-             <tr>
-               <td class="label">City</td>
-               <!-- Note: Selection of address components in this example is typical.
-               You may need to adjust it for the locations relevant to your app. See
-               https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform-->
-               <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"></input></td>
-             </tr>
-		     <tr>
-		       <td class="label">State</td>
-		       <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"></input></td>
-		       <td class="label">Zip code</td>
-		       <td class="wideField"><input class="field" id="postal_code" disabled="true"></input></td>
-		     </tr>
-		     <tr>
-		       <td class="label">Country</td>
-		       <td class="wideField" colspan="3"><input class="field" id="country" disabled="true"></input></td>
-		     </tr>
-		    </table>
-         </div>
-       </div>
+     <span class="icon-bar"></span>
+     <ul class="nav navbar-nav">
+      <li class="active"><a href="homepage.html"><h1><strong>Home</strong></h1></a></li>
+      <li><a href="complaint.html">Consumer</a></li>
+      <li><a href="company.html">Company</a></li>
+      <li><a href="./reactApp/index.html">Chat</a></li>
+        <!--=============================================================-->
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li><a href="#">Bank Account or Service</a></li>
+         <li><a href="#">Credit Card</a></li>
+         <li><a href="#">Credit Reporting</a></li>
+         <li><a href="#">Debt Collection</a></li>
+         <li><a href="#">Money Transfer</a></li>
+         <li><a href="#">Mortgage</a></li>
+         <li><a href="#">Other Financial Service</a></li>
+         <li><a href="#">Payday Loan</a></li>
+         <li><a href="#">Prepaid Card</a></li>
+         <li><a href="#">Student Loans</a></li>
+         <li><a href="#">Vehicle / Consumer Loan</a></li>
+         <li><a href="#">One more separated link</a></li>
+       </ul>
+      </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li><a href="#">Twitter</a></li>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="#">Snapchat</a></li>
+         <li role="separator" class="divider"></li>
+         <li><a href="#">Instagram</a></li>
+        </ul>
+    </li>
+     <!--=============================================================-->
+
+     <div class="navbar-nav navbar-right">
+       <li><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li><br>
+       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
      </div>
-
-     <div class="col-sm-5">
-       <div class="panel panel-default">
-         <div class="panel-heading">Complaint Data</div>
-          <div class="panel-body">
-           <div class="form-group">
-             <label for="Company">Select Business You Want To Complain About:</label>
-             <select class="form-control" id="company-input" name="companyname">
-               <option value="" disabled selected hidden>Please Choose...</option>
-               <option value="1">Bank of America</option>
-               <option>JP Morgan Chase</option>
-               <option>Wells Fargo</option>
-               <option>BBVA Compass</option>
-               <option>CitiBank</option>
-               <option>CapitalOne</option>
-               <option>1st Franklin Financial Corporation</option>
-               <option>Santander</option>
-               <option>Experian</option>
-               <option>USAA Savings</option>
-               <option>Exeter</option>
-               <option>Fidelity NIS</option>
-               <option>Equifax</option>
-               <option>US Bancorp</option>
-             </select>
-           </div>
-
-           <div class="form-group">
-             <label for="Company">Select Product You Want To Complain About:</label>
-             <select class="form-control" id="company-input" name="productname">
-               <option value="" disabled selected hidden>Please Choose...</option>
-               <option value="1">Credit Card</option>
-               <option>Consumer Loan</option>
-               <option>Debt Collection</option>
-               <option>Bank Account Service</option>
-               <option>Mortgage</option>
-               <option>Student Loan</option>
-             </select>
-           </div>
-           <div class="form-group">
-             <label for="complaint-title">Enter Your Complaint</label>
-			  <input class="form-control" id="complaint-title-input" type="text" placeholder="Complaint Title" name="complainttitle">
-		   </div>
-		   <div class="form-group">
-			<textarea class="form-control" id="complaint-input"type="text" placeholder="Write Complaint Here" name="complaintinput" rows="15" cols="50" id="aboutDescription" style="resize: none;" data-role="none"></textarea>
-		   </div>
-          </div>
-         </div>
-       </div>
-     </div>
-    </div>
-    <input class="center-block" type="submit">
-    <a href="/complaints">See your notes!</a>
-    <a href="/user">See your profile!</a>
-    <a href="/populateduser">See your profile, populated with notes!</a>
-   
-  <script src="js/addressScript.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxuP_cA1GmF-eWrNqPAtCIw6J-m2MFrFQ&libraries=places&callback=initAutocomplete"
-        async defer></script>
-  <script src="js/datetimepickerScript.js"></script>
-  </form>
-
+     </ul>
   </div>
+ </div>
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+    <div class="container">
+     <div class="row">
+        <div class="page-header">
+         <div class="panel panel-default">
+          <h1 class="panel-title Jumbotron text-center"></h1>
+         </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="text-center">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/wCfUKkMGeKE"></iframe>
+        </div>  
+      </div>
+      <div class="row">
+         <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="./lib_mon/images/conflict-resolution.jpg" alt="conflict-resolution" class="img-responsive" width=10% height="100%">
+                <div class="carousel-caption">
+                    <h3>What Is Insanity?</h3>
+                    <p>Expecting A Different Result, With No Course Of Action.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./lib_mon/images/mediation-min.png" alt="Mediation" class="img-responsive" width=10% height="100%">
+            <div class="carousel-caption">
+                <h3>What Is ReSolve?</h3>
+                <p>Resolve acts as a mediator to consumers and companies.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./lib_mon/images/NotListening.jpg" alt="Not Listening" class="img-responsive" width=10% height="100%">
+            <div class="carousel-caption">
+                <h3>What Does It Mean To Listen?</h3>
+                <p>Let ReSolve Help Bring A Resolution To Your Complaint.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./lib_mon/images/win-win.jpg" alt="Win-Win" class="img-responsive" width=10% height="100%">
+            <div class="carousel-caption">
+                <h3>What Resolve Can Do For Your Brand?</h3>
+                <p>Resolve Helps To Bring A Resolution.</p>
+            </div>
+        </div>
+        <!-- Controls -->
+        <!-- Left and right controls -->
+        <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="icon-prev">Previous</span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="icon-next">Next</span>
+        </a>
+     </div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="footerP">
+            <h3>AM Developers Stay Woke! </h3>
+        </div>
+        <a class="btn btn-social-icon btn-google"><span class="fa-fa-google"></span> <img class="amlogo" src="./lib_mon/images/urban-sun-2.png" href="https://plus.google.com/u/2/100585966047117381378"/></a>
+    </footer>
 </body>
+<!-- Scripts -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery."></script> -->
+<!-- <script src="assets/javascript/navbar.js"></script> -->
+<script src="./lib_mon/js/jquery-1.11.3.min.js"></script>
+<!-- <script src="js/modernizr.js"></script> -->
+<!-- <script src="assets/javascript/carousel.js"></script> -->
+<!-- <script src="assets/javascript/jquery.js"></script> -->
+<script src="./lib_mon/js/bootstrap.min.js"></script>
+
 </html>

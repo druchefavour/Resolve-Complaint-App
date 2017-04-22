@@ -11,7 +11,7 @@ var mongoose = require("mongoose");
 var mongodb = require("mongodb");
 
 //Here we find an appriopriate database to connect to, defaulting to localhost if we don't find one.
-var uristring = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URI || "mongodb://localhost/consumercompdb";
+var uristring = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URI || "mongodb://localhost/consumercomdb";
 
 // The app server will listen to an appriopriate port, or default to port 3000
 
@@ -60,7 +60,7 @@ db.once("open", function() {
 
 //MongoDB connection URL - mongodb://host:port/dbName
 
-var dbHost = "mongodb://localhost/consumercompdb";
+var dbHost = "mongodb://localhost/consumercomdb";
      
 //Use the MongoClient to connect to the db as shown below:
 //DB Object
@@ -129,7 +129,7 @@ app.get('/home', function(req, res) {
 
 app.get('/chat', function(req, res) {
   console.log('hit chat route')
-  res.sendFile(__dirname + '/public/reactApp/public/index.html');
+  res.sendFile(__dirname + '/react-chat-app/index.html');
 })
 
 //create express app and get logged complaints for charting
@@ -280,6 +280,6 @@ app.get("/populateduser", function(req, res) {
 });
 
 // Listen on Port 3000
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 3300, function(){
   console.log('listening on 3300');
 });

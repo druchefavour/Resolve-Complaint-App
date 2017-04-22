@@ -1,39 +1,46 @@
-var path = require('path');
+// webpack.config.js
+var webpack = require('webpack')
 
+var loaders = [];
+// JS loaders
+if (process.env.NODE_ENV === 'development') {
+  var js_loaders = {
+    test: /\.js$/,
+    loaders: ['react-hot','babel'],
+    exclude: /node_modules/
+  }
+} else {
+  var js_loaders = {
+    test: /\.js$/,
+    loaders: ['babel'],
+    exclude: /node_modules/
+  }
+}
+loaders.push(js_loaders)
+// Development loaders
+if(process.env.NODE_ENV === 'development'){
+  var es_lint = {
+    test: /\.js$/, 
+    loader: 'eslint-loader',
+    exclude: /node_modules/
+  }
+  loaders.push(es_lint)
+}
 module.exports = {
-
-  // This is the entry point or start of our react applicaton
-  entry: "./app/app.js",
-
-  // The plain compiled JavaScript will be output into this file
+  devtool: 'source-map',
+  entry: './app-client.js',
   output: {
-    filename: "public/bundle.js"
+    path: __dirname + '/public/dist',
+    filename: 'bundle.js',
+    publicPath: '/dist/'
   },
-
-  resolve: {
-    extensions: ['.html', '.js', '.jsx']
-  },
-
-  // This section desribes the transformations we will perform
   module: {
-    loaders: [
-      {
-        // Only working with files that in in a .js or .jsx extension
-        test: /\.jsx?$/,
-        // Webpack will only process files in our app folder. This avoids processing
-        // node modules and server files unnecessarily
-        include: /app/,
-        loader: "babel-loader",
-        exclude: /node_modules/,
-        query: {
-          cacheDirectory: true,
-          // These are the specific transformations we'll be using.
-          presets: ["react", "es2015"]
-        }
-      }
-    ]
+    loaders: loaders
   },
-  // This lets us debug our react code in chrome dev tools. Errors will have lines and file names
-  // Without this the console says all errors are coming from just coming from bundle.js
-  devtool: "eval-source-map"
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.COSMIC_BUCKET': JSON.stringify(process.env.COSMIC_BUCKET),
+      'process.env.APP_URL': JSON.stringify(process.env.APP_URL)
+    })
+ ]
 };
